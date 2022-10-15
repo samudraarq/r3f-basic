@@ -1,13 +1,13 @@
 import { useFrame, useThree } from "@react-three/fiber";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useSpring, animated } from "@react-spring/three";
 
 const AnimationBox = () => {
-  const [active, setActive] = useState(false);
-  const { clock, camera } = useThree();
+  //   const [active, setActive] = useState(false);
+  //   const { clock, camera } = useThree();
   const mesh = useRef();
 
-  const { scale } = useSpring({ scale: active ? 1.5 : 1 });
+  //   const { scale } = useSpring({ scale: active ? 1.5 : 1 });
   const { x } = useSpring({
     from: { x: 0 },
     to: [{ x: 2 }, { x: 0 }],

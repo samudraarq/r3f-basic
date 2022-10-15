@@ -1,6 +1,5 @@
 import { useThree } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
-// import { Vector3 } from "three";
 
 const RedBox = () => {
   const mesh = useRef();
