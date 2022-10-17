@@ -2,8 +2,8 @@
 // import GroupBox from "./GroupBox";
 // import RedBox from "./RedBox";
 // import Camera from "./Camera";
-
-import Geometries from "./Geometries";
+// import Geometries from "./Geometries";
+import DebugUI from "./DebugUI";
 
 const Main = () => {
   return (
@@ -12,7 +12,8 @@ const Main = () => {
       {/* <GroupBox /> */}
       {/* <AnimationBox /> */}
       {/* <Camera /> */}
-      <Geometries />
+      {/* <Geometries /> */}
+      <DebugUI />
     </>
   );
 };
