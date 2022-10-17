@@ -16,7 +16,7 @@ function App() {
         {/* <ambientLight intensity={0.1} />
         <directionalLight color="red" position={[0, 0, 5]} /> */}
         {/* <axesHelper /> */}
-        <OrbitControls maxPolarAngle={Math.PI / 2} />
+        <OrbitControls />
         <Main />
       </Canvas>
     </div>
