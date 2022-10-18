@@ -3,7 +3,8 @@
 // import RedBox from "./RedBox";
 // import Camera from "./Camera";
 // import Geometries from "./Geometries";
-import DebugUI from "./DebugUI";
+// import DebugUI from "./DebugUI";
+import Textures from "./Textures";
 
 const Main = () => {
   return (
@@ -13,7 +14,8 @@ const Main = () => {
       {/* <AnimationBox /> */}
       {/* <Camera /> */}
       {/* <Geometries /> */}
-      <DebugUI />
+      {/* <DebugUI /> */}
+      <Textures />
     </>
   );
 };

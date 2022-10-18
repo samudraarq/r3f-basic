@@ -1,7 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
-import Main from "./Components/Main";
+import Main from "./components/Main";
 
 function App() {
   return (
