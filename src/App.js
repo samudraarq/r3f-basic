@@ -8,13 +8,14 @@ function App() {
     <div id="canvas-container">
       <Canvas
         camera={{
-          position: [0, 0, 2],
+          position: [0, 0, 3],
           near: 0.1,
           far: 100,
         }}
       >
-        {/* <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} /> */}
+        <ambientLight intensity={0.5} color="#ffffff" />
+        <pointLight color="#ffffff" intensity={0.5} position={[2, 3, 4]} />
+        {/* <directionalLight color="red" position={[0, 0, 5]} /> */}
         {/* <axesHelper /> */}
         <OrbitControls />
         <Main />
