@@ -1,7 +1,7 @@
 import { useFrame, useThree } from "@react-three/fiber";
 import { useRef, useEffect } from "react";
 import * as THREE from "three";
-import { useCubeTexture, useTexture } from "@react-three/drei";
+import { useCubeTexture } from "@react-three/drei";
 import { useControls } from "leva";
 
 // import doorColorImg from "../assets/textures/door/color.jpg";
@@ -36,13 +36,12 @@ const Material = () => {
     torus.current.rotation.x = 0.15 * clock.elapsedTime;
   });
 
-  const { metalness, roughness, aoMapIntensity, displacementScale } =
-    useControls({
-      metalness: { value: 0.7, min: 0, max: 1, step: 0.01 },
-      roughness: { value: 0.2, min: 0, max: 1, step: 0.01 },
-      aoMapIntensity: { value: 1, min: 0, max: 10, step: 0.01 },
-      displacementScale: { value: 0.05, min: 0, max: 1, step: 0.01 },
-    });
+  const { metalness, roughness } = useControls({
+    metalness: { value: 0.7, min: 0, max: 1, step: 0.01 },
+    roughness: { value: 0.2, min: 0, max: 1, step: 0.01 },
+    aoMapIntensity: { value: 1, min: 0, max: 10, step: 0.01 },
+    displacementScale: { value: 0.05, min: 0, max: 1, step: 0.01 },
+  });
 
   // const [
   //   doorColorTexture,
@@ -66,7 +65,7 @@ const Material = () => {
   //   gradientImg,
   // ]);
 
-  const [doorColorTexture] = useTexture(["textures/door/color.jpg"]);
+  // const [doorColorTexture] = useTexture(["textures/door/color.jpg"]);
 
   const envMap = useCubeTexture(
     ["px.jpg", "nx.jpg", "py.jpg", "ny.jpg", "pz.jpg", "nz.jpg"],

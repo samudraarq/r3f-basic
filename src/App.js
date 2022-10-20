@@ -13,8 +13,8 @@ function App() {
           far: 100,
         }}
       >
-        <ambientLight intensity={0.5} color="#ffffff" />
-        <pointLight color="#ffffff" intensity={0.5} position={[2, 3, 4]} />
+        {/* <ambientLight intensity={0.5} color="#ffffff" /> */}
+        {/* <pointLight color="#ffffff" intensity={0.5} position={[2, 3, 4]} /> */}
         {/* <directionalLight color="red" position={[0, 0, 5]} /> */}
         {/* <axesHelper /> */}
         <OrbitControls />

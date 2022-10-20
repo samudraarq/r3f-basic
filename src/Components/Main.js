@@ -5,8 +5,8 @@
 // import Geometries from "./Geometries";
 // import DebugUI from "./DebugUI";
 // import Textures from "./Textures";
-import { Suspense } from "react";
-import Material from "./Material";
+// import Material from "./Material";
+import TextGeo from "./TextGeo";
 
 const Main = () => {
   return (
@@ -18,9 +18,8 @@ const Main = () => {
       {/* <Geometries /> */}
       {/* <DebugUI /> */}
       {/* <Textures /> */}
-      <Suspense fallback={null}>
-        <Material />
-      </Suspense>
+      {/* <Material /> */}
+      <TextGeo />
     </>
   );
 };
